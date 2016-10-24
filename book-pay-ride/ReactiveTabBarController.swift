@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class ReactiveTabBarController : UITabBarController {
+    var viewModel = RidesViewModel()
+    
     override var selectedIndex: Int {
         didSet {
             print("selected index: \(self.selectedIndex)")
@@ -21,8 +23,17 @@ class ReactiveTabBarController : UITabBarController {
             if vc.tabBarItem == item {
                 let index = self.viewControllers?.indexOf(vc) ?? 0
                 print("selected index \(index)")
+                viewModel.setRidesVisible(index)
             }
         })
+    }
+    
+    func setSharedViewModel() {
+        for vc in viewControllers ?? [] {
+            if let rvc = vc as? RidesViewController {
+                rvc.viewModel = self.viewModel
+            }
+        }
     }
     
 }

@@ -50,6 +50,7 @@ const NSString *ridesVCidentifier = @"RidesViewController";
 }
 
 - (ReactiveTabBarController*) createReactiveTabbar {
+
     UIStoryboard *ridesStoryboard = [UIStoryboard storyboardWithName:@"Rides" bundle:[NSBundle mainBundle]];
     RidesViewController *rvc1 = [ridesStoryboard instantiateViewControllerWithIdentifier:ridesVCidentifier];
     rvc1.tabBarItem.title = @"Train";
@@ -63,6 +64,7 @@ const NSString *ridesVCidentifier = @"RidesViewController";
     
     ReactiveTabBarController *tabbarVC = [[ReactiveTabBarController alloc] init];
     tabbarVC.viewControllers = @[rvc1, rvc2, rvc3];
+    [tabbarVC setSharedViewModel];
     
     return tabbarVC;
 }

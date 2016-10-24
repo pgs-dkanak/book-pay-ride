@@ -19,8 +19,6 @@ class RidesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        viewModel.ridesVisible = Ride(n: 0)
         // Do any additional setup after loading the view.
     }
 
@@ -33,7 +31,6 @@ class RidesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //TODO: this should not be directed this way. It is against good design, but created here in sake of speed and because tabbarController is controlled by storyboard
 
     }
 

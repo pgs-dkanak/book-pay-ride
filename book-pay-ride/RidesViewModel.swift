@@ -30,8 +30,14 @@ enum Ride : Int {
 }
 
 class RidesViewModel {
-    var ridesVisible = Ride.train
+    private var ridesVisibleVariable = Variable<Ride>(Ride.train)
+    var onRidesVisibleChange : Observable<Ride> {
+        return self.ridesVisibleVariable.asObservable()
+    }
     
+    func setRidesVisible(index: Int) {
+        ridesVisibleVariable.value = Ride(n: index)
+    }
     
     
     
