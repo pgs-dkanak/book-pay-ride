@@ -15,6 +15,10 @@
 		0584A7201DBEA18800877738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0584A71E1DBEA18800877738 /* LaunchScreen.storyboard */; };
 		0584A72B1DBEA18800877738 /* book_pay_rideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A72A1DBEA18800877738 /* book_pay_rideTests.m */; };
 		0584A7361DBEA18800877738 /* book_pay_rideUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7351DBEA18800877738 /* book_pay_rideUITests.m */; };
+		0584A7491DBEA48400877738 /* RidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7481DBEA48400877738 /* RidesViewController.swift */; };
+		0584A74B1DBEA49E00877738 /* RidesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0584A74A1DBEA49E00877738 /* RidesViewModel.swift */; };
+		0584A74D1DBEA4F900877738 /* Rides.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0584A74C1DBEA4F900877738 /* Rides.storyboard */; };
+		0584A7511DBEAC9D00877738 /* ReactiveTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7501DBEAC9D00877738 /* ReactiveTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		0584A7311DBEA18800877738 /* book-pay-rideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-pay-rideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0584A7351DBEA18800877738 /* book_pay_rideUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = book_pay_rideUITests.m; sourceTree = "<group>"; };
 		0584A7371DBEA18800877738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0584A7471DBEA48300877738 /* book-pay-ride-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "book-pay-ride-Bridging-Header.h"; sourceTree = "<group>"; };
+		0584A7481DBEA48400877738 /* RidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RidesViewController.swift; sourceTree = "<group>"; };
+		0584A74A1DBEA49E00877738 /* RidesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RidesViewModel.swift; sourceTree = "<group>"; };
+		0584A74C1DBEA4F900877738 /* Rides.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rides.storyboard; sourceTree = "<group>"; };
+		0584A7501DBEAC9D00877738 /* ReactiveTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +112,18 @@
 			children = (
 				0584A7131DBEA18800877738 /* AppDelegate.h */,
 				0584A7141DBEA18800877738 /* AppDelegate.m */,
+				0584A7501DBEAC9D00877738 /* ReactiveTabBarController.swift */,
 				0584A7161DBEA18800877738 /* ViewController.h */,
 				0584A7171DBEA18800877738 /* ViewController.m */,
 				0584A7191DBEA18800877738 /* Main.storyboard */,
+				0584A7481DBEA48400877738 /* RidesViewController.swift */,
+				0584A74A1DBEA49E00877738 /* RidesViewModel.swift */,
+				0584A74C1DBEA4F900877738 /* Rides.storyboard */,
 				0584A71C1DBEA18800877738 /* Assets.xcassets */,
 				0584A71E1DBEA18800877738 /* LaunchScreen.storyboard */,
 				0584A7211DBEA18800877738 /* Info.plist */,
 				0584A7101DBEA18800877738 /* Supporting Files */,
+				0584A7471DBEA48300877738 /* book-pay-ride-Bridging-Header.h */,
 			);
 			path = "book-pay-ride";
 			sourceTree = "<group>";
@@ -246,6 +260,7 @@
 			files = (
 				0584A7201DBEA18800877738 /* LaunchScreen.storyboard in Resources */,
 				0584A71D1DBEA18800877738 /* Assets.xcassets in Resources */,
+				0584A74D1DBEA4F900877738 /* Rides.storyboard in Resources */,
 				0584A71B1DBEA18800877738 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +288,9 @@
 			files = (
 				0584A7181DBEA18800877738 /* ViewController.m in Sources */,
 				0584A7151DBEA18800877738 /* AppDelegate.m in Sources */,
+				0584A74B1DBEA49E00877738 /* RidesViewModel.swift in Sources */,
+				0584A7491DBEA48400877738 /* RidesViewController.swift in Sources */,
+				0584A7511DBEAC9D00877738 /* ReactiveTabBarController.swift in Sources */,
 				0584A7121DBEA18800877738 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,12 +434,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "book-pay-ride/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-ride";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "book-pay-ride/book-pay-ride-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -429,12 +450,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "book-pay-ride/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-ride";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "book-pay-ride/book-pay-ride-Bridging-Header.h";
 			};
 			name = Release;
 		};
