@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0584A7121DBEA18800877738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7111DBEA18800877738 /* main.m */; };
+		0584A7151DBEA18800877738 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7141DBEA18800877738 /* AppDelegate.m */; };
+		0584A7181DBEA18800877738 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7171DBEA18800877738 /* ViewController.m */; };
+		0584A71B1DBEA18800877738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0584A7191DBEA18800877738 /* Main.storyboard */; };
+		0584A71D1DBEA18800877738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0584A71C1DBEA18800877738 /* Assets.xcassets */; };
+		0584A7201DBEA18800877738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0584A71E1DBEA18800877738 /* LaunchScreen.storyboard */; };
+		0584A72B1DBEA18800877738 /* book_pay_rideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A72A1DBEA18800877738 /* book_pay_rideTests.m */; };
+		0584A7361DBEA18800877738 /* book_pay_rideUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7351DBEA18800877738 /* book_pay_rideUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0584A7271DBEA18800877738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0584A7051DBEA18700877738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0584A70C1DBEA18700877738;
+			remoteInfo = "book-pay-ride";
+		};
+		0584A7321DBEA18800877738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0584A7051DBEA18700877738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0584A70C1DBEA18700877738;
+			remoteInfo = "book-pay-ride";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0584A70D1DBEA18700877738 /* book-pay-ride.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-pay-ride.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0584A7111DBEA18800877738 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0584A7131DBEA18800877738 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0584A7141DBEA18800877738 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0584A7161DBEA18800877738 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0584A7171DBEA18800877738 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0584A71A1DBEA18800877738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0584A71C1DBEA18800877738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0584A71F1DBEA18800877738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0584A7211DBEA18800877738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0584A7261DBEA18800877738 /* book-pay-rideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-pay-rideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0584A72A1DBEA18800877738 /* book_pay_rideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = book_pay_rideTests.m; sourceTree = "<group>"; };
+		0584A72C1DBEA18800877738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0584A7311DBEA18800877738 /* book-pay-rideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-pay-rideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0584A7351DBEA18800877738 /* book_pay_rideUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = book_pay_rideUITests.m; sourceTree = "<group>"; };
+		0584A7371DBEA18800877738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0584A70A1DBEA18700877738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0584A7231DBEA18800877738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0584A72E1DBEA18800877738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0584A7041DBEA18700877738 = {
+			isa = PBXGroup;
+			children = (
+				0584A70F1DBEA18800877738 /* book-pay-ride */,
+				0584A7291DBEA18800877738 /* book-pay-rideTests */,
+				0584A7341DBEA18800877738 /* book-pay-rideUITests */,
+				0584A70E1DBEA18700877738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0584A70E1DBEA18700877738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0584A70D1DBEA18700877738 /* book-pay-ride.app */,
+				0584A7261DBEA18800877738 /* book-pay-rideTests.xctest */,
+				0584A7311DBEA18800877738 /* book-pay-rideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0584A70F1DBEA18800877738 /* book-pay-ride */ = {
+			isa = PBXGroup;
+			children = (
+				0584A7131DBEA18800877738 /* AppDelegate.h */,
+				0584A7141DBEA18800877738 /* AppDelegate.m */,
+				0584A7161DBEA18800877738 /* ViewController.h */,
+				0584A7171DBEA18800877738 /* ViewController.m */,
+				0584A7191DBEA18800877738 /* Main.storyboard */,
+				0584A71C1DBEA18800877738 /* Assets.xcassets */,
+				0584A71E1DBEA18800877738 /* LaunchScreen.storyboard */,
+				0584A7211DBEA18800877738 /* Info.plist */,
+				0584A7101DBEA18800877738 /* Supporting Files */,
+			);
+			path = "book-pay-ride";
+			sourceTree = "<group>";
+		};
+		0584A7101DBEA18800877738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0584A7111DBEA18800877738 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0584A7291DBEA18800877738 /* book-pay-rideTests */ = {
+			isa = PBXGroup;
+			children = (
+				0584A72A1DBEA18800877738 /* book_pay_rideTests.m */,
+				0584A72C1DBEA18800877738 /* Info.plist */,
+			);
+			path = "book-pay-rideTests";
+			sourceTree = "<group>";
+		};
+		0584A7341DBEA18800877738 /* book-pay-rideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0584A7351DBEA18800877738 /* book_pay_rideUITests.m */,
+				0584A7371DBEA18800877738 /* Info.plist */,
+			);
+			path = "book-pay-rideUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0584A70C1DBEA18700877738 /* book-pay-ride */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0584A73A1DBEA18800877738 /* Build configuration list for PBXNativeTarget "book-pay-ride" */;
+			buildPhases = (
+				0584A7091DBEA18700877738 /* Sources */,
+				0584A70A1DBEA18700877738 /* Frameworks */,
+				0584A70B1DBEA18700877738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "book-pay-ride";
+			productName = "book-pay-ride";
+			productReference = 0584A70D1DBEA18700877738 /* book-pay-ride.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0584A7251DBEA18800877738 /* book-pay-rideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0584A73D1DBEA18800877738 /* Build configuration list for PBXNativeTarget "book-pay-rideTests" */;
+			buildPhases = (
+				0584A7221DBEA18800877738 /* Sources */,
+				0584A7231DBEA18800877738 /* Frameworks */,
+				0584A7241DBEA18800877738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0584A7281DBEA18800877738 /* PBXTargetDependency */,
+			);
+			name = "book-pay-rideTests";
+			productName = "book-pay-rideTests";
+			productReference = 0584A7261DBEA18800877738 /* book-pay-rideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0584A7301DBEA18800877738 /* book-pay-rideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0584A7401DBEA18800877738 /* Build configuration list for PBXNativeTarget "book-pay-rideUITests" */;
+			buildPhases = (
+				0584A72D1DBEA18800877738 /* Sources */,
+				0584A72E1DBEA18800877738 /* Frameworks */,
+				0584A72F1DBEA18800877738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0584A7331DBEA18800877738 /* PBXTargetDependency */,
+			);
+			name = "book-pay-rideUITests";
+			productName = "book-pay-rideUITests";
+			productReference = 0584A7311DBEA18800877738 /* book-pay-rideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0584A7051DBEA18700877738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "pgs-dkanak";
+				TargetAttributes = {
+					0584A70C1DBEA18700877738 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0584A7251DBEA18800877738 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0584A70C1DBEA18700877738;
+					};
+					0584A7301DBEA18800877738 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0584A70C1DBEA18700877738;
+					};
+				};
+			};
+			buildConfigurationList = 0584A7081DBEA18700877738 /* Build configuration list for PBXProject "book-pay-ride" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0584A7041DBEA18700877738;
+			productRefGroup = 0584A70E1DBEA18700877738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0584A70C1DBEA18700877738 /* book-pay-ride */,
+				0584A7251DBEA18800877738 /* book-pay-rideTests */,
+				0584A7301DBEA18800877738 /* book-pay-rideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0584A70B1DBEA18700877738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0584A7201DBEA18800877738 /* LaunchScreen.storyboard in Resources */,
+				0584A71D1DBEA18800877738 /* Assets.xcassets in Resources */,
+				0584A71B1DBEA18800877738 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0584A7241DBEA18800877738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0584A72F1DBEA18800877738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0584A7091DBEA18700877738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0584A7181DBEA18800877738 /* ViewController.m in Sources */,
+				0584A7151DBEA18800877738 /* AppDelegate.m in Sources */,
+				0584A7121DBEA18800877738 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0584A7221DBEA18800877738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0584A72B1DBEA18800877738 /* book_pay_rideTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0584A72D1DBEA18800877738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0584A7361DBEA18800877738 /* book_pay_rideUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0584A7281DBEA18800877738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0584A70C1DBEA18700877738 /* book-pay-ride */;
+			targetProxy = 0584A7271DBEA18800877738 /* PBXContainerItemProxy */;
+		};
+		0584A7331DBEA18800877738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0584A70C1DBEA18700877738 /* book-pay-ride */;
+			targetProxy = 0584A7321DBEA18800877738 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0584A7191DBEA18800877738 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0584A71A1DBEA18800877738 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0584A71E1DBEA18800877738 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0584A71F1DBEA18800877738 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0584A7381DBEA18800877738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0584A7391DBEA18800877738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0584A73B1DBEA18800877738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "book-pay-ride/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-ride";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0584A73C1DBEA18800877738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "book-pay-ride/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-ride";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0584A73E1DBEA18800877738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "book-pay-rideTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-rideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/book-pay-ride.app/book-pay-ride";
+			};
+			name = Debug;
+		};
+		0584A73F1DBEA18800877738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "book-pay-rideTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-rideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/book-pay-ride.app/book-pay-ride";
+			};
+			name = Release;
+		};
+		0584A7411DBEA18800877738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "book-pay-rideUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-rideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "book-pay-ride";
+			};
+			name = Debug;
+		};
+		0584A7421DBEA18800877738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "book-pay-rideUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pgs.book-pay-rideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "book-pay-ride";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0584A7081DBEA18700877738 /* Build configuration list for PBXProject "book-pay-ride" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0584A7381DBEA18800877738 /* Debug */,
+				0584A7391DBEA18800877738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0584A73A1DBEA18800877738 /* Build configuration list for PBXNativeTarget "book-pay-ride" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0584A73B1DBEA18800877738 /* Debug */,
+				0584A73C1DBEA18800877738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0584A73D1DBEA18800877738 /* Build configuration list for PBXNativeTarget "book-pay-rideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0584A73E1DBEA18800877738 /* Debug */,
+				0584A73F1DBEA18800877738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0584A7401DBEA18800877738 /* Build configuration list for PBXNativeTarget "book-pay-rideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0584A7411DBEA18800877738 /* Debug */,
+				0584A7421DBEA18800877738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0584A7051DBEA18700877738 /* Project object */;
+}
