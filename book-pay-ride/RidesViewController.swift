@@ -20,6 +20,9 @@ class RidesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let apiManager = APIManager()
+        apiManager.requestFlights()
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057657591DBECD4B00F3C709 /* Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = 0576574A1DBECD4B00F3C709 /* Alamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0576575A1DBECD4B00F3C709 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576574B1DBECD4B00F3C709 /* Alamofire.swift */; };
+		0576575B1DBECD4B00F3C709 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576574C1DBECD4B00F3C709 /* Download.swift */; };
+		0576575C1DBECD4B00F3C709 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576574D1DBECD4B00F3C709 /* Error.swift */; };
+		0576575D1DBECD4B00F3C709 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0576574E1DBECD4B00F3C709 /* Info.plist */; };
+		0576575E1DBECD4B00F3C709 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576574F1DBECD4B00F3C709 /* Manager.swift */; };
+		0576575F1DBECD4B00F3C709 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657501DBECD4B00F3C709 /* MultipartFormData.swift */; };
+		057657601DBECD4B00F3C709 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657511DBECD4B00F3C709 /* ParameterEncoding.swift */; };
+		057657611DBECD4B00F3C709 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657521DBECD4B00F3C709 /* Request.swift */; };
+		057657621DBECD4B00F3C709 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657531DBECD4B00F3C709 /* ResponseSerialization.swift */; };
+		057657631DBECD4B00F3C709 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657541DBECD4B00F3C709 /* Result.swift */; };
+		057657641DBECD4B00F3C709 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657551DBECD4B00F3C709 /* ServerTrustPolicy.swift */; };
+		057657651DBECD4B00F3C709 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657561DBECD4B00F3C709 /* Stream.swift */; };
+		057657661DBECD4B00F3C709 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657571DBECD4B00F3C709 /* Upload.swift */; };
+		057657671DBECD4B00F3C709 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057657581DBECD4B00F3C709 /* Validation.swift */; };
 		0584A7121DBEA18800877738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7111DBEA18800877738 /* main.m */; };
 		0584A7151DBEA18800877738 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7141DBEA18800877738 /* AppDelegate.m */; };
 		0584A7181DBEA18800877738 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0584A7171DBEA18800877738 /* ViewController.m */; };
@@ -162,6 +177,9 @@
 		05A09B191DBEB76E0047EE14 /* ReplaySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A09A8A1DBEB76E0047EE14 /* ReplaySubject.swift */; };
 		05A09B1A1DBEB76E0047EE14 /* SubjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A09A8B1DBEB76E0047EE14 /* SubjectType.swift */; };
 		05A09B1B1DBEB76E0047EE14 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A09A8C1DBEB76E0047EE14 /* Variable.swift */; };
+		05A09B6E1DBEC3CE0047EE14 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A09B6D1DBEC3CE0047EE14 /* APIManager.swift */; };
+		05BA826B1DBEC99F000914DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BA82641DBEC99F000914DF /* Alamofire.framework */; };
+		05BA826C1DBEC99F000914DF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BA82641DBEC99F000914DF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +197,20 @@
 			remoteGlobalIDString = 0584A70C1DBEA18700877738;
 			remoteInfo = "book-pay-ride";
 		};
+		05BA82241DBEC8C4000914DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0584A7051DBEA18700877738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0584A70C1DBEA18700877738;
+			remoteInfo = "book-pay-ride";
+		};
+		05BA82691DBEC99F000914DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0584A7051DBEA18700877738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BA82631DBEC99F000914DF;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -188,6 +220,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				05BA826C1DBEC99F000914DF /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +228,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0576574A1DBECD4B00F3C709 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alamofire.h; path = "book-pay-ride/Alamofire/Alamofire.h"; sourceTree = SOURCE_ROOT; };
+		0576574B1DBECD4B00F3C709 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = "book-pay-ride/Alamofire/Alamofire.swift"; sourceTree = SOURCE_ROOT; };
+		0576574C1DBECD4B00F3C709 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Download.swift; path = "book-pay-ride/Alamofire/Download.swift"; sourceTree = SOURCE_ROOT; };
+		0576574D1DBECD4B00F3C709 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = "book-pay-ride/Alamofire/Error.swift"; sourceTree = SOURCE_ROOT; };
+		0576574E1DBECD4B00F3C709 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "book-pay-ride/Alamofire/Info.plist"; sourceTree = SOURCE_ROOT; };
+		0576574F1DBECD4B00F3C709 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = "book-pay-ride/Alamofire/Manager.swift"; sourceTree = SOURCE_ROOT; };
+		057657501DBECD4B00F3C709 /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = "book-pay-ride/Alamofire/MultipartFormData.swift"; sourceTree = SOURCE_ROOT; };
+		057657511DBECD4B00F3C709 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = "book-pay-ride/Alamofire/ParameterEncoding.swift"; sourceTree = SOURCE_ROOT; };
+		057657521DBECD4B00F3C709 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "book-pay-ride/Alamofire/Request.swift"; sourceTree = SOURCE_ROOT; };
+		057657531DBECD4B00F3C709 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = "book-pay-ride/Alamofire/ResponseSerialization.swift"; sourceTree = SOURCE_ROOT; };
+		057657541DBECD4B00F3C709 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "book-pay-ride/Alamofire/Result.swift"; sourceTree = SOURCE_ROOT; };
+		057657551DBECD4B00F3C709 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = "book-pay-ride/Alamofire/ServerTrustPolicy.swift"; sourceTree = SOURCE_ROOT; };
+		057657561DBECD4B00F3C709 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = "book-pay-ride/Alamofire/Stream.swift"; sourceTree = SOURCE_ROOT; };
+		057657571DBECD4B00F3C709 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = "book-pay-ride/Alamofire/Upload.swift"; sourceTree = SOURCE_ROOT; };
+		057657581DBECD4B00F3C709 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = "book-pay-ride/Alamofire/Validation.swift"; sourceTree = SOURCE_ROOT; };
 		0584A70D1DBEA18700877738 /* book-pay-ride.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-pay-ride.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0584A7111DBEA18800877738 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0584A7131DBEA18800877738 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -359,6 +407,10 @@
 		05A09A8A1DBEB76E0047EE14 /* ReplaySubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaySubject.swift; sourceTree = "<group>"; };
 		05A09A8B1DBEB76E0047EE14 /* SubjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectType.swift; sourceTree = "<group>"; };
 		05A09A8C1DBEB76E0047EE14 /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		05A09B6D1DBEC3CE0047EE14 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		05BA82201DBEC8C4000914DF /* AlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BA82341DBEC8FE000914DF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		05BA82641DBEC99F000914DF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +418,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BA826B1DBEC99F000914DF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +436,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05BA821D1DBEC8C4000914DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BA82601DBEC99F000914DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -392,6 +459,7 @@
 				0584A70F1DBEA18800877738 /* book-pay-ride */,
 				0584A7291DBEA18800877738 /* book-pay-rideTests */,
 				0584A7341DBEA18800877738 /* book-pay-rideUITests */,
+				05BA82651DBEC99F000914DF /* Alamofire */,
 				0584A70E1DBEA18700877738 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -402,6 +470,8 @@
 				0584A70D1DBEA18700877738 /* book-pay-ride.app */,
 				0584A7261DBEA18800877738 /* book-pay-rideTests.xctest */,
 				0584A7311DBEA18800877738 /* book-pay-rideUITests.xctest */,
+				05BA82201DBEC8C4000914DF /* AlamofireTests.xctest */,
+				05BA82641DBEC99F000914DF /* Alamofire.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,13 +487,14 @@
 				0584A7501DBEAC9D00877738 /* ReactiveTabBarController.swift */,
 				0584A7481DBEA48400877738 /* RidesViewController.swift */,
 				0584A74A1DBEA49E00877738 /* RidesViewModel.swift */,
+				05A09B6D1DBEC3CE0047EE14 /* APIManager.swift */,
 				0584A74C1DBEA4F900877738 /* Rides.storyboard */,
 				0584A71C1DBEA18800877738 /* Assets.xcassets */,
 				0584A71E1DBEA18800877738 /* LaunchScreen.storyboard */,
-				05A099F21DBEB76E0047EE14 /* RxSwift */,
 				0584A7211DBEA18800877738 /* Info.plist */,
-				0584A7101DBEA18800877738 /* Supporting Files */,
 				0584A7471DBEA48300877738 /* book-pay-ride-Bridging-Header.h */,
+				05A099F21DBEB76E0047EE14 /* RxSwift */,
+				0584A7101DBEA18800877738 /* Supporting Files */,
 			);
 			path = "book-pay-ride";
 			sourceTree = "<group>";
@@ -448,6 +519,7 @@
 		0584A7341DBEA18800877738 /* book-pay-rideUITests */ = {
 			isa = PBXGroup;
 			children = (
+				05BA82341DBEC8FE000914DF /* APIManager.swift */,
 				0584A7351DBEA18800877738 /* book_pay_rideUITests.m */,
 				0584A7371DBEA18800877738 /* Info.plist */,
 			);
@@ -692,7 +764,40 @@
 			path = Subjects;
 			sourceTree = "<group>";
 		};
+		05BA82651DBEC99F000914DF /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				0576574A1DBECD4B00F3C709 /* Alamofire.h */,
+				0576574B1DBECD4B00F3C709 /* Alamofire.swift */,
+				0576574C1DBECD4B00F3C709 /* Download.swift */,
+				0576574D1DBECD4B00F3C709 /* Error.swift */,
+				0576574E1DBECD4B00F3C709 /* Info.plist */,
+				0576574F1DBECD4B00F3C709 /* Manager.swift */,
+				057657501DBECD4B00F3C709 /* MultipartFormData.swift */,
+				057657511DBECD4B00F3C709 /* ParameterEncoding.swift */,
+				057657521DBECD4B00F3C709 /* Request.swift */,
+				057657531DBECD4B00F3C709 /* ResponseSerialization.swift */,
+				057657541DBECD4B00F3C709 /* Result.swift */,
+				057657551DBECD4B00F3C709 /* ServerTrustPolicy.swift */,
+				057657561DBECD4B00F3C709 /* Stream.swift */,
+				057657571DBECD4B00F3C709 /* Upload.swift */,
+				057657581DBECD4B00F3C709 /* Validation.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05BA82611DBEC99F000914DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057657591DBECD4B00F3C709 /* Alamofire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0584A70C1DBEA18700877738 /* book-pay-ride */ = {
@@ -707,6 +812,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				05BA826A1DBEC99F000914DF /* PBXTargetDependency */,
 			);
 			name = "book-pay-ride";
 			productName = "book-pay-ride";
@@ -749,6 +855,42 @@
 			productReference = 0584A7311DBEA18800877738 /* book-pay-rideUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		05BA821F1DBEC8C4000914DF /* AlamofireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BA82311DBEC8C4000914DF /* Build configuration list for PBXNativeTarget "AlamofireTests" */;
+			buildPhases = (
+				05BA821C1DBEC8C4000914DF /* Sources */,
+				05BA821D1DBEC8C4000914DF /* Frameworks */,
+				05BA821E1DBEC8C4000914DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BA82251DBEC8C4000914DF /* PBXTargetDependency */,
+			);
+			name = AlamofireTests;
+			productName = AlamofireTests;
+			productReference = 05BA82201DBEC8C4000914DF /* AlamofireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05BA82631DBEC99F000914DF /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BA826D1DBEC99F000914DF /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				05BA825F1DBEC99F000914DF /* Sources */,
+				05BA82601DBEC99F000914DF /* Frameworks */,
+				05BA82611DBEC99F000914DF /* Headers */,
+				05BA82621DBEC99F000914DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 05BA82641DBEC99F000914DF /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -771,6 +913,14 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 0584A70C1DBEA18700877738;
 					};
+					05BA821F1DBEC8C4000914DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0584A70C1DBEA18700877738;
+					};
+					05BA82631DBEC99F000914DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 36CHZQXF4C;
+					};
 				};
 			};
 			buildConfigurationList = 0584A7081DBEA18700877738 /* Build configuration list for PBXProject "book-pay-ride" */;
@@ -789,6 +939,8 @@
 				0584A70C1DBEA18700877738 /* book-pay-ride */,
 				0584A7251DBEA18800877738 /* book-pay-rideTests */,
 				0584A7301DBEA18800877738 /* book-pay-rideUITests */,
+				05BA821F1DBEC8C4000914DF /* AlamofireTests */,
+				05BA82631DBEC99F000914DF /* Alamofire */,
 			);
 		};
 /* End PBXProject section */
@@ -820,6 +972,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BA821E1DBEC8C4000914DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BA82621DBEC99F000914DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0576575D1DBECD4B00F3C709 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +1058,7 @@
 				05A09ADA1DBEB76E0047EE14 /* SingleAsync.swift in Sources */,
 				05A09ACD1DBEB76E0047EE14 /* ObserveOn.swift in Sources */,
 				05A09A8D1DBEB76E0047EE14 /* AnyObserver.swift in Sources */,
+				05A09B6E1DBEC3CE0047EE14 /* APIManager.swift in Sources */,
 				05A09AAC1DBEB76E0047EE14 /* Event.swift in Sources */,
 				05A09AD51DBEB76E0047EE14 /* Sample.swift in Sources */,
 				05A09AAB1DBEB76E0047EE14 /* Errors.swift in Sources */,
@@ -994,6 +1162,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05BA821C1DBEC8C4000914DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BA825F1DBEC99F000914DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057657661DBECD4B00F3C709 /* Upload.swift in Sources */,
+				057657651DBECD4B00F3C709 /* Stream.swift in Sources */,
+				057657631DBECD4B00F3C709 /* Result.swift in Sources */,
+				057657601DBECD4B00F3C709 /* ParameterEncoding.swift in Sources */,
+				057657671DBECD4B00F3C709 /* Validation.swift in Sources */,
+				0576575A1DBECD4B00F3C709 /* Alamofire.swift in Sources */,
+				0576575C1DBECD4B00F3C709 /* Error.swift in Sources */,
+				057657621DBECD4B00F3C709 /* ResponseSerialization.swift in Sources */,
+				0576575B1DBECD4B00F3C709 /* Download.swift in Sources */,
+				057657611DBECD4B00F3C709 /* Request.swift in Sources */,
+				057657641DBECD4B00F3C709 /* ServerTrustPolicy.swift in Sources */,
+				0576575E1DBECD4B00F3C709 /* Manager.swift in Sources */,
+				0576575F1DBECD4B00F3C709 /* MultipartFormData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1006,6 +1201,16 @@
 			isa = PBXTargetDependency;
 			target = 0584A70C1DBEA18700877738 /* book-pay-ride */;
 			targetProxy = 0584A7321DBEA18800877738 /* PBXContainerItemProxy */;
+		};
+		05BA82251DBEC8C4000914DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0584A70C1DBEA18700877738 /* book-pay-ride */;
+			targetProxy = 05BA82241DBEC8C4000914DF /* PBXContainerItemProxy */;
+		};
+		05BA826A1DBEC99F000914DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BA82631DBEC99F000914DF /* Alamofire */;
+			targetProxy = 05BA82691DBEC99F000914DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1192,6 +1397,74 @@
 			};
 			name = Release;
 		};
+		05BA82321DBEC8C4000914DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlamofireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgs.AlamofireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/book-pay-ride.app/book-pay-ride";
+			};
+			name = Debug;
+		};
+		05BA82331DBEC8C4000914DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AlamofireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgs.AlamofireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/book-pay-ride.app/book-pay-ride";
+			};
+			name = Release;
+		};
+		05BA826E1DBEC99F000914DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Alamofire/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgs.Alamofire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05BA826F1DBEC99F000914DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Alamofire/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgs.Alamofire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1227,6 +1500,24 @@
 			buildConfigurations = (
 				0584A7411DBEA18800877738 /* Debug */,
 				0584A7421DBEA18800877738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BA82311DBEC8C4000914DF /* Build configuration list for PBXNativeTarget "AlamofireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BA82321DBEC8C4000914DF /* Debug */,
+				05BA82331DBEC8C4000914DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BA826D1DBEC99F000914DF /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BA826E1DBEC99F000914DF /* Debug */,
+				05BA826F1DBEC99F000914DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
