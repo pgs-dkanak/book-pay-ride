@@ -48,9 +48,35 @@
                                     <constraint firstItem="7r5-04-lNu" firstAttribute="top" secondItem="jns-86-rrE" secondAttribute="bottom" constant="4" id="wG6-3z-QQ8"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="943-81-CmO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="943-81-CmO">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RideTableViewCell" rowHeight="84" id="yoM-9r-NdF" customClass="RideTableViewCell" customModule="book_pay_ride" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="84"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yoM-9r-NdF" id="DKi-Gc-WMh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYY-VT-ZqE">
+                                                    <rect key="frame" x="279" y="31" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xYY-VT-ZqE" firstAttribute="centerY" secondItem="DKi-Gc-WMh" secondAttribute="centerY" id="J5y-Rn-AcQ"/>
+                                                <constraint firstItem="xYY-VT-ZqE" firstAttribute="centerX" secondItem="DKi-Gc-WMh" secondAttribute="centerX" id="M4J-fX-mHJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2W7-v5-tHp" id="ghq-nY-cyJ"/>
+                                    <outlet property="delegate" destination="2W7-v5-tHp" id="xGp-rL-wAT"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.12201551350000001" green="0.51464742419999998" blue="0.83918243650000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -65,12 +91,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ridesTableView" destination="943-81-CmO" id="QAV-HI-fpZ"/>
                         <outlet property="sortButton" destination="BwL-Og-WoC" id="HCU-Pl-2Hq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cn2-TN-Yrh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="-1490.1049475262371"/>
+            <point key="canvasLocation" x="1056" y="-1491"/>
         </scene>
     </scenes>
 </document>

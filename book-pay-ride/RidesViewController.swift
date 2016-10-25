@@ -12,11 +12,16 @@ import UIKit
 class RidesViewController: UIViewController {
     var viewModel = RidesViewModel()
 
+    private let disposeBag = DisposeBag()
     @IBOutlet weak var sortButton: UIButton!
+    @IBOutlet weak var ridesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewModel.onRidesChanged.subscribeNext { _ in
+            self.ridesTableView.reloadData()
+        }.addDisposableTo(disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,4 +44,21 @@ class RidesViewController: UIViewController {
     }
     */
 
+}
+
+extension RidesViewController : UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.rides.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("RideTableViewCell") ?? UITableViewCell()
+        return cell
+    }
+}
+
+extension RidesViewController : UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("selected indexPath: \(indexPath)")
+    }
 }

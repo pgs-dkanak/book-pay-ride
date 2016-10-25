@@ -39,6 +39,9 @@ class RidesViewModel {
     var rides : [Ride] {
         return ridesVariable.value
     }
+    var onRidesChanged : Observable<[Ride]>{
+        return ridesVariable.asObservable()
+    }
     
     func setRidesVisible(index: Int) {
         ridesVisibleType = RideType(n: index)
