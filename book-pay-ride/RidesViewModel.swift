@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum Ride : Int {
+enum RideType : Int {
     case train = 0
     case bus = 1
     case flight = 2
@@ -30,16 +30,34 @@ enum Ride : Int {
 }
 
 class RidesViewModel {
-    private var ridesVisibleVariable = Variable<Ride>(Ride.train)
-    var onRidesVisibleChange : Observable<Ride> {
-        return self.ridesVisibleVariable.asObservable()
+    private let apiManager = APIManager()
+    private let disposeBag = DisposeBag()
+    
+    private var ridesVisibleType = RideType.train
+    
+    private var ridesVariable = Variable<[Ride]>([])
+    var rides : [Ride] {
+        return ridesVariable.value
     }
     
     func setRidesVisible(index: Int) {
-        ridesVisibleVariable.value = Ride(n: index)
+        ridesVisibleType = RideType(n: index)
+        requestRides(ridesVisibleType).subscribeNext {[weak self] (rides: [Ride]) in
+            self?.ridesVariable.value = rides
+        }.addDisposableTo(disposeBag)
     }
     
-    
-    
+    func requestRides(type: RideType) -> Observable<[Ride]> {
+        switch type {
+        case .train:
+            return apiManager.requestTrains()
+        case .bus:
+            return apiManager.requestBuses()
+        case .flight:
+            return apiManager.requestFlights()
+        default:
+            return Observable<[Ride]>()
+        }
+    }
 }
 
