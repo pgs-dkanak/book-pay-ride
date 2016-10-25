@@ -10,15 +10,12 @@ import UIKit
 
 
 class RidesViewController: UIViewController {
-    
     var viewModel = RidesViewModel()
-
 
     @IBOutlet weak var sortButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -30,8 +27,6 @@ class RidesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-
     }
 
     /*
