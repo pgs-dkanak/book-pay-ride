@@ -16,12 +16,19 @@ class RidesViewController: UIViewController {
     @IBOutlet weak var sortButton: UIButton!
     @IBOutlet weak var ridesTableView: UITableView!
     
+    @IBAction func didPressSortButton(sender: AnyObject) {
+        viewModel.changeSortCriteria()
+        sortButton.titleLabel?.text = viewModel.sortType.name()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         viewModel.onRidesChanged.subscribeNext { _ in
             self.ridesTableView.reloadData()
         }.addDisposableTo(disposeBag)
+        
+        sortButton.titleLabel?.text = viewModel.sortType.name()
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,5 +68,6 @@ extension RidesViewController : UITableViewDataSource {
 extension RidesViewController : UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("selected indexPath: \(indexPath)")
+        //TODO: push navigation cotroller
     }
 }

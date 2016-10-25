@@ -29,11 +29,35 @@ enum RideType : Int {
     }
 }
 
+enum SortType {
+    case arrivals
+    case departures
+    
+    func name() -> String {
+        switch self {
+        case .arrivals:
+            return "Arrivals"
+        case .departures:
+            return"Departures"
+        }
+    }
+    
+    func nextType() -> SortType {
+        switch self {
+        case .arrivals:
+            return .departures
+        case .departures:
+            return .arrivals
+        }
+    }
+}
+
 class RidesViewModel {
     private let apiManager = APIManager()
     private let disposeBag = DisposeBag()
     
     private var ridesVisibleType = RideType.train
+    var sortType = SortType.departures
     
     private var ridesVariable = Variable<[Ride]>([])
     var rides : [Ride] {
@@ -60,6 +84,20 @@ class RidesViewModel {
             return apiManager.requestFlights()
         default:
             return Observable<[Ride]>()
+        }
+    }
+    
+    func changeSortCriteria() {
+        sortType = sortType.nextType()
+        sortRides()
+    }
+    
+    func sortRides() {
+        switch sortType {
+        case .arrivals:
+            ridesVariable.value = rides.sort { $0.0.arrivalTime.compare($0.1.arrivalTime) == NSComparisonResult.OrderedAscending }
+        case .departures:
+            ridesVariable.value = rides.sort { $0.0.departureTime.compare($0.1.departureTime) == NSComparisonResult.OrderedAscending }
         }
     }
 }

@@ -31,7 +31,7 @@ class RideTableViewCell: UITableViewCell {
     
     func populateFields() {
         departureAndArrivalLabel.text = departureAndArrival()
-        priceLabel.text = "\(ride.price)"
+        priceLabel.text = "\u{20AC}\(ride.price)"
         durationLabel.text = rideDuration()
         numberOfStopsLabel.text = numberOfStops()
     }
