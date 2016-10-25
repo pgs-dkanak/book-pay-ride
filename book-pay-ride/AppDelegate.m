@@ -7,16 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "book_pay_ride-Swift.h"
 
 @interface AppDelegate ()
 
+
+
 @end
+
+const NSString *ridesVCidentifier = @"RidesViewController";
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    self.window.rootViewController = [self createReactiveTabbar];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -40,6 +47,26 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (ReactiveTabBarController*) createReactiveTabbar {
+
+    UIStoryboard *ridesStoryboard = [UIStoryboard storyboardWithName:@"Rides" bundle:[NSBundle mainBundle]];
+    RidesViewController *rvc1 = [ridesStoryboard instantiateViewControllerWithIdentifier:ridesVCidentifier];
+    rvc1.tabBarItem.title = @"Train";
+    rvc1.tabBarItem.image = [UIImage imageNamed:@"train"];
+    RidesViewController *rvc2 = [ridesStoryboard instantiateViewControllerWithIdentifier:ridesVCidentifier];
+    rvc2.tabBarItem.title = @"Bus";
+    rvc2.tabBarItem.image = [UIImage imageNamed:@"bus-stop"];
+    RidesViewController *rvc3 = [ridesStoryboard instantiateViewControllerWithIdentifier:ridesVCidentifier];
+    rvc3.tabBarItem.title = @"Flight";
+    rvc3.tabBarItem.image = [UIImage imageNamed:@"flight"];
+    
+    ReactiveTabBarController *tabbarVC = [[ReactiveTabBarController alloc] init];
+    tabbarVC.viewControllers = @[rvc1, rvc2, rvc3];
+    [tabbarVC setSharedViewModel];
+    
+    return tabbarVC;
 }
 
 @end

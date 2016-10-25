@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>book-pay-ride.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0576576C1DBED13600F3C709</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0584A70C1DBEA18700877738</key>
 		<dict>
 			<key>primary</key>
@@ -23,6 +38,31 @@
 			<true/>
 		</dict>
 		<key>0584A7301DBEA18800877738</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05A098A91DBEB6490047EE14</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05A098B21DBEB6490047EE14</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05BA82161DBEC8C4000914DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05BA821F1DBEC8C4000914DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05BA82631DBEC99F000914DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
