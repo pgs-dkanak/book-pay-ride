@@ -52,7 +52,8 @@ extension RidesViewController : UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RideTableViewCell") ?? UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("RideTableViewCell", forIndexPath: indexPath) as! RideTableViewCell
+        cell.ride = viewModel.rides[indexPath.row]
         return cell
     }
 }
