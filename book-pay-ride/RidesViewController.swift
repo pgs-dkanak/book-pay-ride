@@ -12,11 +12,23 @@ import UIKit
 class RidesViewController: UIViewController {
     var viewModel = RidesViewModel()
 
+    private let disposeBag = DisposeBag()
     @IBOutlet weak var sortButton: UIButton!
+    @IBOutlet weak var ridesTableView: UITableView!
+    
+    @IBAction func didPressSortButton(sender: AnyObject) {
+        viewModel.changeSortCriteria()
+        sortButton.titleLabel?.text = viewModel.sortType.name()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewModel.onRidesChanged.subscribeNext { _ in
+            self.ridesTableView.reloadData()
+        }.addDisposableTo(disposeBag)
+        
+        sortButton.titleLabel?.text = viewModel.sortType.name()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,4 +51,23 @@ class RidesViewController: UIViewController {
     }
     */
 
+}
+
+extension RidesViewController : UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.rides.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("RideTableViewCell", forIndexPath: indexPath) as! RideTableViewCell
+        cell.ride = viewModel.rides[indexPath.row]
+        return cell
+    }
+}
+
+extension RidesViewController : UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("selected indexPath: \(indexPath)")
+        //TODO: push navigation cotroller
+    }
 }
